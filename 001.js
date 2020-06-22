@@ -1,5 +1,5 @@
 <script>
-    var nilai = prompt("Inputkan nilai :");
+    var nilai = prompt("Inputkan angka anda :");
     var grade = "";
 
     if(nilai >= 90) grade = "A"
