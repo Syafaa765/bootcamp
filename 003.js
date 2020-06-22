@@ -1,14 +1,11 @@
-<script>
-Math.max(1,2,3,4,5,6);     // hasilnya: 6
-Math.max(10,20,30,90,5);   // hasilnya: 90
-Math.max(50);              // hasilnya: 50
-</script>
+var arr = [];
+arr.Push(value1);
+arr.Push(value2);
+arr.Push(value3);
 
-<script>
-Math.min(1,2,3,4,5,6);       // hasilnya: 1
-Math.mmin(10,20,30,90,5);    // hasilnya: 5
-Math.max(50);                // hasilnya: 50
-</script>
+var minValue = Math.min.apply(null, arr);
+var maxValue = Math.max.apply(null, arr);
+
 
  <script>
             function Hitung(dat1,dat2,dat3,dat4,dat5,dat6){
