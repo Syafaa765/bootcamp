@@ -1,15 +1,7 @@
-const array =["Jakarta", "Aceh", "Malang", "Medan", "Bontang", "Jogja", "Jakarta", "Bandung", "Malang", "Solo", "Palembang", "Bandung"];
+const array = ["Jakarta", "Aceh", "Malang", "Medan", "Bontang", "Jogja", "Jakarta", "Bandung", "Malang", "Solo", "Palembang", "Bandung"];
+// membuat data set 
+const uniqueSet = new Set(array);
+// mengembalikan format object set ke array
+const backToArray = [...uniqueSet];
 
-array.reduce((unique, item) => {
-    console.log(
-                // value
-                item, 
-                // array hasil (akumulasi)
-                unique, 
-                // nilai yang dikembalikan (value hanya akan disertakan pada array jika nilai berupa false)
-                unique.includes(item), 
-                // array akhir
-                unique.includes(item) ? unique : [...unique, item]
-                );
-    return unique.includes(item) ? unique : [...unique, item];
-},[]);
+console.log(backToArray);
